@@ -116,6 +116,24 @@ ul {
   margin-right: 10px;
 }
 
+/* Blockquote */
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 120px;
+  padding: 30px 40px;
+}
+
+.quote blockquote {
+  font-size: 2.5rem;
+}
+
+.quote p {
+  font-size: 2rem;
+  text-align: end;
+}
+
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media (max-width: 768px) {
   .header .container {
