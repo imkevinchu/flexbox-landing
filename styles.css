@@ -97,26 +97,23 @@ ul {
   max-width: 400px;
 }
 
-/* Figures */
-
-figure {
-  border: thin #c0c0c0 solid;
+.boxes .container {
   display: flex;
-  flex-flow: row;
-  padding: 5px;
-  max-width: 300px;
-  margin: auto;
+  justify-content: space-between;
 }
 
-figure img {
-  max-width: 300px;
-  max-height: 300px;
+.box {
+  flex: 1;
+  background: #0a51cc;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
 }
 
-figcaption {
-  font: italic smaller sans-serif;
-  padding: 3px;
-  text-align: center;
+.box i {
+  margin-right: 10px;
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
