@@ -1,34 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #a1c3ff;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 /* Style the navigation bar */
-.header-bar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-  }
+.navbar {
+  background: #3474e6;
+  color: #fff;
+  height: 60px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
 
 /* Navbar links */
-nav a {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Navbar links on mouse-over */
-  nav a:hover {
-    background-color: #000;
-  }
-  
-  /* Current/active navbar link */
-  .active {
-    background-color: #04AA6D;
-  }
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  color: lightblue;
+}
+
+/* Separate logo from nav links */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* Flexbox row nav links */
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.img-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Figures */
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: row;
+  padding: 5px;
+  max-width: 300px;
+  margin: auto;
+}
+
+figure img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+figcaption {
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 500px) {
-    .header-bar a {
-      float: none;
-      display: block;
-    }
+  .header-bar a {
+    float: none;
+    display: block;
   }
+}
