@@ -97,6 +97,10 @@ ul {
   max-width: 400px;
 }
 
+.header button {
+  margin-top: 15px;
+}
+
 .boxes {
   min-height: 270px;
   display: flex;
