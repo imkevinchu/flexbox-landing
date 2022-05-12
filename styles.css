@@ -97,6 +97,12 @@ ul {
   max-width: 400px;
 }
 
+.boxes {
+  min-height: 270px;
+  display: flex;
+  align-items: center;
+}
+
 .boxes .container {
   display: flex;
   justify-content: space-between;
@@ -116,6 +122,29 @@ ul {
   margin-right: 10px;
 }
 
+/* CTA */
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  background: #0a51cc;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 35px 100px;
+}
+
+/* Button */
+
+button {
+  background: #0a51cc;
+  color: #fff;
+  border-radius: 10px;
+  border-color: #fff;
+  padding: 5px 40px;
+}
+
 /* Blockquote */
 
 .quote {
@@ -127,11 +156,24 @@ ul {
 
 .quote blockquote {
   font-size: 2.5rem;
+  font-style: italic;
 }
 
 .quote p {
   font-size: 2rem;
   text-align: end;
+}
+
+#wrapper-3 {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  min-height: 300px;
+}
+
+footer {
+  background-color: #3474e6;
+  min-height: 30px;
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
